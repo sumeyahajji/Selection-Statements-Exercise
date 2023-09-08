@@ -10,15 +10,15 @@
             var favNumber = a.Next(20, 30);
             
 
-            Console.WriteLine("Guess a random number:");//It prompts the user to input their guess.
+            Console.WriteLine("Guess a random number");//It prompts the user to input their guess.
             var userInput = int.Parse(Console.ReadLine());//reads user input and convert it into integer and stores it in variable called userinput
 
-            if (favNumber < userInput)
+            if (favNumber > userInput)
             {
                 Console.WriteLine("Too low!");
 
             }
-            else if ( favNumber > userInput)
+            else if ( favNumber < userInput)
             {
                 Console.WriteLine("Too high");
             }
